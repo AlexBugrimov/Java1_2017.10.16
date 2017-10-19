@@ -2,6 +2,7 @@ package ru.spec.java1.lec4;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.TreeSet;
 
 public class WordsCount {
 
@@ -14,9 +15,17 @@ public class WordsCount {
 		
 
 		ArrayList<String> strings = new ArrayList<>();
+		// strings.listIterator()
+		TreeSet<String> set = new TreeSet<>();
+		
 		addWordsToArray(str1, strings);
 		addWordsToArray(str2, strings);
 		
+		set.addAll(strings);
+		
+		for(String word: set) {
+			System.out.println(word);
+		}
 		
 	}
 
