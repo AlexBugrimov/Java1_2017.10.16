@@ -30,6 +30,10 @@ public class TimeTest {
 		
 		System.out.println();
 		System.out.println(millis);
+		
+		
+		Integer[] array = new Integer[1_000_000];
+		for(int i = 0; i < 1_000)
 		System.out.println(nano);
 
 		long startTime = millis - nano;
