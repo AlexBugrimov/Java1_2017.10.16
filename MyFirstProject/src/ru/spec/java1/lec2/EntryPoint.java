@@ -6,18 +6,6 @@ import java.util.Date;
 public class EntryPoint {
 	public static void main(String[] args) {
 
-		/*// fib();
-		
-		System.out.println(Math.pow(2.5,  -3.362));
-		
-		int max = 10;
-		int[] array = new int[max];
-		
-		int[] array1 = new int[] {1, 2, 3, 4, 5, 6};
-		
-		for(int i : array1) {
-			System.out.println(i);
-		}*/
 		Object o = new Date();
 		System.out.println(o.getClass().getName());
 		
