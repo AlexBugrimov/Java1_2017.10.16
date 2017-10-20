@@ -20,6 +20,7 @@ public class TimeTest {
 		for (int i = 0; i < 100_000; i++) {
 			list.add(i);
 		}
+		
 		System.out.println((System.nanoTime() - ts)/1000/1000d + "ms");
 		ts = System.nanoTime();
 		LinkedList<Integer> list1 = new LinkedList<>();
