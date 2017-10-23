@@ -29,10 +29,14 @@ public class FilesTest {
 		// Ввод нескольких строк
 		for(;scanner.hasNextLine();) {
 			String[] nextLine = scanner.nextLine().toLowerCase().split("[^а-яё]+");
-			for() {
-				
-			}
-			System.out.println(nextLine);	
+			for (String word : nextLine) {
+                if (!stat.containsKey(word)) {
+                    stat.put(word, 1);
+                    continue;
+                }
+                stat.put(word, (stat.get(word) + 1));
+            }
+			System.out.println(stat);	
 		}	
 	}
 }
