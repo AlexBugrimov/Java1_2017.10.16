@@ -10,6 +10,13 @@ public class Palindrom {
 		 * 
 		 * } }
 		 */
+
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < 10_000; i++) {
+			sb.append("A");
+		}
+		
+		testString = sb.toString();
 		for (int i = 0; i < 10; i++) {
 			test1();
 			test2();
@@ -17,10 +24,10 @@ public class Palindrom {
 			System.out.println();
 		}
 	}
-	
+
 	static int MAX = 100_000;
 	static String testString = "1dksfhkshfksbbsdbckhdksd";
-	
+
 	private static void test1() {
 		long ts = System.nanoTime();
 		for (int i = 0; i < MAX; i++) {
