@@ -6,7 +6,6 @@ public class MySite implements Site {
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return "MySite";
 	}
 	
