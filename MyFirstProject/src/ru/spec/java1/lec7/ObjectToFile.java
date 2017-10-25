@@ -12,7 +12,7 @@ import java.util.Date;
 
 public class ObjectToFile implements Serializable {
 	int i = 5;
-	String name = "";
+	transient String name = "";
 	
 	public static void main(String[] args) throws Exception {
 		File file = new File("c:/java/obj.bin");
