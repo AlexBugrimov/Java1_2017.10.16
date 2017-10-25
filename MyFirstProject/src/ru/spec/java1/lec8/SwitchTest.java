@@ -1,33 +1,24 @@
 package ru.spec.java1.lec8;
 
+import java.util.concurrent.TimeUnit;
+
 public class SwitchTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		int i = 3;
-		switch (i) {
-		case 1:
-			System.out.println(1);
-//			break;
-		case 2:
-			System.out.println(2);
-	//		break;
-		case 3:
-			System.out.println(3);
-		//	break;
-		case 4:
-			System.out.println(4);
-			//break;
-		case 5:
-			System.out.println(5);
-			//break;
-		case 6:
-			System.out.println(6);
+		Menu item = Menu.PROJECTS_1;
+		System.out.println(item);
+		/*switch (item) {
+		case ABOUT:
+			System.out.println(item.toString());
+			System.out.println(item.name());
 			break;
 		default:
-			System.out.println("def");
+			System.out.println(item);
 			break;
 		}
-
+*/
+		TimeUnit.SECONDS.sleep(5);
 	}
 
 }
