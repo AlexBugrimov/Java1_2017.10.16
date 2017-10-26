@@ -1,8 +1,12 @@
 package ru.spec.java1.lec8;
 
 public enum Menu {
-	MAIN("Главная"), PROJECTS("Проекты"), PROJECTS_1("Проекты_1", PROJECTS), PROJECTS_2("Проекты_2",
-			PROJECTS), ABOUT("О нас"), CONTACTS("Контакты");
+	MAIN("Главная"), 
+	PROJECTS("Проекты"), 
+	PROJECTS_1("Проекты_1", PROJECTS), 
+	PROJECTS_2("Проекты_2", PROJECTS), 
+	ABOUT("О нас"), 
+	CONTACTS("Контакты");
 
 	String title;
 	Menu parent;
